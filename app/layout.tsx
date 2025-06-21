@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Readex_Pro } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const readexPro = Readex_Pro({
@@ -23,6 +24,7 @@ export default function RootLayout({
         className={`${readexPro.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
