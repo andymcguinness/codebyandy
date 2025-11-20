@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
 :root {
-  --background: #eee;
-  --foreground: #4d4d4f;
+  /* Custom color palette */
+  --background: #e8e9eb;
+  --foreground: #222;
+  --border: #e8e9eb;
+  --accent: #87c66c;
+  --accent-dark: #37553d;
+  --accent-warm: #b4654a;
+  --accent-light: #87c66c;
+  --card-bg: #ffffff;
+  --muted: #37553d;
+  --warm-cream: #e8e9eb;
+  --soft-sage: #87c66c;
+}
+
+.dark {
+  --background: #222;
+  --foreground: #e8e9eb;
+  --border: #37553d;
+  --accent: #87c66c;
+  --accent-dark: #37553d;
+  --accent-warm: #b4654a;
+  --accent-light: #87c66c;
+  --card-bg: #222;
+  --muted: #87c66c;
+  --warm-cream: #222;
+  --soft-sage: #37553d;
 }
 
 @theme inline {
-  --font-readex-pro: "Readex Pro", "sans-serif";
-  --color-davys-gray: #4D4D4F;
-  --color-cerulean: #4281A4;
-  --color-mounbatten-pink: #A07178;
-  --color-asparagus: #7A9B76;
-  --color-anti-flash-white: #eee;
+  /* Main theme colors that map to Tailwind utilities */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-accent-warm: var(--accent-warm);
+  --color-accent-light: var(--accent-light);
+  --color-muted: var(--muted);
+  --color-card-bg: var(--card-bg);
+
+  /* Accent green color scale (based on #87c66c) */
+  --color-sage-50: #f4f9f1;
+  --color-sage-100: #e8f3e2;
+  --color-sage-200: #d1e7c5;
+  --color-sage-300: #a8d398;
+  --color-sage-400: #87c66c;
+  --color-sage-500: #6ba554;
+  --color-sage-600: #548440;
+  --color-sage-700: #3d632f;
+  --color-sage-800: #37553d;
+  --color-sage-900: #2a4129;
+
+  /* Warm neutrals (white-based) */
+  --color-cream-50: #e8e9eb;
+  --color-cream-100: #e8e9eb;
+  --color-cream-200: #e8e9eb;
+
+  /* Earthy accents (based on #b4654a) */
+  --color-earth-100: #f5e7e2;
+  --color-earth-200: #dda890;
+  --color-earth-300: #b4654a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #4d4d4f;
-    --foreground: #eee;
-  }
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 body {
-  font-family: var(--font-display);
+  background-color: var(--background);
+  color: var(--foreground);
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Organic texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.015;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling - organic feel */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 6px;
+  border: 3px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dark);
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--accent-light);
+  color: var(--warm-cream);
+}
+
+/* Rounded corners throughout */
+button,
+input,
+textarea,
+select {
+  border-radius: 12px;
 }

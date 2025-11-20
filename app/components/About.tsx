@@ -1,90 +1,99 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaNodeJs } from 'react-icons/fa';
-import { SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section className="relative min-h-screen px-6 py-24 bg-mounbatten-pink/20 text-black overflow-hidden items-center justify-center align-center flex">
-      <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-        {/* Text Content */}
-        <div>
-          <h2 className="text-5xl font-bold mb-8 tracking-tight">about andy</h2>
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 text-lg leading-relaxed space-y-5"
-          >
-            <p>
-              hey, i&apos;m andy! i&apos;ve been building websites professionally for over 5 years now. i use a modern tech stack, and focus on keeping things forward-thinking, modular, and clean.
-            </p>
-            <p>
-              i work with humans who are awesome and capable, but either need an extra hand to get things done, or don&apos;t have the time and energy to diy a polished product. i&apos;m here to do the heavy lifting so you can focus on what really matters!
-            </p>
-            <p>
-              if you&apos;ve been thinking about building a new product, or have a project under construction, let&apos;s chat! i&apos;m here to help.
-            </p>
-          </motion.div>
-
-          {/* Tech Badges */}
-          <div className="mt-10 flex flex-wrap gap-4 items-center">
-            <motion.span 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.25 }}
-              className="flex items-center gap-2 bg-mounbatten-pink text-white px-5 py-2.5 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-base font-medium"
-            >
-              <SiNextdotjs /> Next.js
-            </motion.span>
-            <motion.span 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="flex items-center gap-2 bg-mounbatten-pink text-white px-5 py-2.5 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-base font-medium"
-            >
-              <SiTypescript /> TypeScript
-            </motion.span>
-            <motion.span 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.75 }}
-              className="flex items-center gap-2 bg-mounbatten-pink text-white px-5 py-2.5 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-base font-medium"
-            >
-              <SiTailwindcss /> Tailwind CSS
-            </motion.span>
-            <motion.span 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1 }}
-              className="flex items-center gap-2 bg-mounbatten-pink text-white px-5 py-2.5 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 text-base font-medium"
-            >
-              <FaNodeJs /> Node.js
-            </motion.span>
+    <section id="about" className="relative min-h-screen z-10 border-b border-foreground/10">
+      {/* Mobile-only image at top */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative lg:hidden border border-foreground/10"
+      >
+        <div className="relative w-full h-[50vh]">
+          <Image
+            src="/images/andypic.jpg"
+            alt="Andy McGuinness"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+          />
+          {/* Geometric overlay lines */}
+          <div className="absolute inset-0">
+            <div className="absolute top-0 right-0 w-20 h-20 border-t border-r border-background/20" />
+            <div className="absolute bottom-0 left-0 w-20 h-20 border-b border-l border-background/20" />
           </div>
         </div>
+      </motion.div>
 
-        {/* Image Section */}
+      {/* Two-column grid - reversed from Hero */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 min-h-screen bg-background">
+        {/* Left column - Text content (2 columns) */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="space-y-8"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="lg:col-span-2 flex items-center justify-center p-8 lg:p-16 lg:border-r border-foreground/10"
         >
-          <div className="relative w-full h-[500px]">
+          <div className="max-w-3xl space-y-8">
+            {/* Geometric accent line */}
+            <div className="w-16 h-px bg-accent-warm" />
+
+            {/* Main heading */}
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+              <p className="inline-block text-foreground">Your partner{" "}<span className="inline-block text-accent mt-2">in the process</span></p>
+            </h2>
+
+            {/* Description */}
+            <div className="space-y-6 text-lg md:text-xl text-muted leading-relaxed">
+              <p>
+                Heya! I&apos;m Andy. For the past 3+ years, I&apos;ve been helping small businesses and entrepreneurs bring their digital ideas to life.
+              </p>
+              <p>
+                Here&apos;s the thing: you&apos;re brilliant at what you do. You could probably figure out how to build your own website or app, but your time is better spent on your actual work.
+              </p>
+              <p>
+                That&apos;s where I come in. I&apos;m here to understand your vision, ask the right questions, and build something that actually serves your goals. I&apos;m just as excited about your idea as you are!
+              </p>
+
+              {/* Key message callout */}
+              <div className="pt-4">
+                <div className="border-l-2 border-accent-warm pl-6">
+                  <p className="text-accent-warm font-semibold text-xl">
+                    Let&apos;s build something you&apos;re proud of — together.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Right column - Image (1 column) */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="relative hidden lg:block border border-foreground/10"
+        >
+          <div className="relative w-full h-full min-h-[50vh] lg:min-h-screen">
             <Image
-              src="/images/hero-bg.jpg"
-              alt="A computer on a table"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
+              src="/images/andypic.jpg"
+              alt="Andy McGuinness"
+              fill
+              sizes="(max-width: 1024px) 100vw, 33vw"
+              className="object-cover"
               priority
             />
           </div>
         </motion.div>
-      </div>  
+      </div>
     </section>
   );
 };

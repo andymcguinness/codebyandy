@@ -1,21 +1,23 @@
 'use client';
 
 import Hero from './components/Hero';
-import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Services from './components/Services';
 import About from './components/About';
+import Process from './components/Process';
+import Navigation from './components/Navigation';
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <Navigation />
       <Hero />
       <About />
       <Services />
-      <Portfolio />
+      <Process />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }

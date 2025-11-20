@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Readex_Pro } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const readexPro = Readex_Pro({
   variable: "--font-readex-pro",
@@ -9,8 +10,8 @@ const readexPro = Readex_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "code by andy",
-  description: "the site of freelancer andy mcguinness",
+  title: "Code by Andy | Web Development Partner for Small Businesses",
+  description: "Professional web development partner for small businesses and entrepreneurs. Custom websites and web apps built with care, thoughtfully designed to grow with your business. No jargon, just quality work.",
 };
 
 export default function RootLayout({
@@ -19,11 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${readexPro.variable} antialiased`}
+        className={`${readexPro.variable} antialiased overflow-x-hidden`}
       >
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>
