@@ -53,20 +53,23 @@ const About = () => {
             {/* Description */}
             <div className="space-y-6 text-lg md:text-xl text-muted leading-relaxed">
               <p>
-                Heya! I&apos;m Andy. For the past 3+ years, I&apos;ve been helping small businesses and entrepreneurs bring their digital ideas to life.
+                Hi, I&apos;m Andy! For the past 3+ years, I&apos;ve been helping value-based small businesses and entrepreneurs bring their digital dreams to life.
               </p>
               <p>
-                Here&apos;s the thing: you&apos;re brilliant at what you do. You could probably figure out how to build your own website or app, but your time is better spent on your actual work.
+                I work with folks from all walks of life, most of whom have one thing in common: they need a web presence, but don&apos;t have the time, energy, or resources to do it themselves. They&apos;re resourceful, determined, resilient, and also very, <span className="italic">very</span> busy. That&apos;s where I come in!
               </p>
               <p>
-                That&apos;s where I come in. I&apos;m here to understand your vision, ask the right questions, and build something that actually serves your goals. I&apos;m just as excited about your idea as you are!
+                It&apos;s my job to listen to my clients and understand their passion, vision, and goals. Being entrusted with their online presence is not something I take lightly! I build every project with intention and care, and make the process as collaborative as humanly possible.
+              </p>
+              <p>
+                In the end, I&apos;m not just another hire &mdash; I&apos;m a partner in the process, deeply invested in <span className="font-bold">your</span> success!
               </p>
 
               {/* Key message callout */}
-              <div className="pt-4">
+              <div className="py-4">
                 <div className="border-l-2 border-accent-warm pl-6">
                   <p className="text-accent-warm font-semibold text-xl">
-                    Let&apos;s build something you&apos;re proud of — together.
+                    If this connects with you, let&apos;s chat!
                   </p>
                 </div>
               </div>

@@ -45,12 +45,12 @@ export default function Hero() {
             {/* Main heading */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
               <span className="block text-foreground">Code by Andy</span>
-              <span className="block text-3xl text-accent-warm mt-2">Human-Centric Web Development</span>
+              <span className="block text-3xl text-accent-warm mt-2">Human-Centered Web Development</span>
             </h1>
 
             {/* Description */}
             <p className="text-lg md:text-xl text-muted leading-relaxed">
-              I partner with thoughtful small business owners to grow their online presence through:
+              I partner with value-driven small business owners to grow their online presence through:
             </p>
 
             {/* Icon list */}
@@ -59,15 +59,13 @@ export default function Hero() {
               <div className="flex items-center gap-4">
                 <div className="w-6 h-6 flex items-center justify-center shrink-0">
                   <svg width="50" height="50" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                    <path d="m600 600c0 310.5 252 562.5 562.5 562.5 0-310.5-252-562.5-562.5-562.5z"/>
-                    <path d="m37.5 1162.5c310.5 0 562.5-252 562.5-562.5-310.5 0-562.5 252-562.5 562.5z"/>
-                    <path d="m1162.5 37.5c-310.5 0-562.5 252-562.5 562.5 310.5 0 562.5-252 562.5-562.5z"/>
-                    <path d="m37.5 37.5c0 310.5 252 562.5 562.5 562.5 0-310.5-252-562.5-562.5-562.5z"/>
+                    <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
+                    <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground">Websites</h3>
-                  <p className="text-muted text-md">authentic to your brand</p>
+                  <h3 className="text-xl font-semibold text-foreground">Thoughtful Websites</h3>
+                  <p className="text-muted text-md">Crafted meticulously to both inspire audiences and exceed goals</p>
                 </div>
               </div>
 
@@ -75,15 +73,13 @@ export default function Hero() {
               <div className="flex items-center gap-4">
                 <div className="w-6 h-6 flex items-center justify-center shrink-0">
                   <svg width="50" height="50" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                    <path d="m600 600c0 310.5 252 562.5 562.5 562.5 0-310.5-252-562.5-562.5-562.5z"/>
-                    <path d="m37.5 1162.5c310.5 0 562.5-252 562.5-562.5-310.5 0-562.5 252-562.5 562.5z"/>
-                    <path d="m1162.5 37.5c-310.5 0-562.5 252-562.5 562.5 310.5 0 562.5-252 562.5-562.5z"/>
-                    <path d="m37.5 37.5c0 310.5 252 562.5 562.5 562.5 0-310.5-252-562.5-562.5-562.5z"/>
+                    <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
+                    <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-xl text-foreground">Blogs</h3>
-                  <p className="text-muted text-md">that look and sound like you</p>
+                  <h3 className="font-semibold text-xl text-foreground">Intentional E-Commerce Sites</h3>
+                  <p className="text-muted text-md">Built with care for both human connection and sales conversions</p>
                 </div>
               </div>
 
@@ -91,25 +87,24 @@ export default function Hero() {
               <div className="flex items-center gap-4">
                 <div className="w-6 h-6 flex items-center justify-center shrink-0">
                   <svg width="50" height="50" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                    <path d="m600 600c0 310.5 252 562.5 562.5 562.5 0-310.5-252-562.5-562.5-562.5z"/>
-                    <path d="m37.5 1162.5c310.5 0 562.5-252 562.5-562.5-310.5 0-562.5 252-562.5 562.5z"/>
-                    <path d="m1162.5 37.5c-310.5 0-562.5 252-562.5 562.5 310.5 0 562.5-252 562.5-562.5z"/>
-                    <path d="m37.5 37.5c0 310.5 252 562.5 562.5 562.5 0-310.5-252-562.5-562.5-562.5z"/>
+                    <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
+                    <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-xl text-foreground"> E-Commerce Sites</h3>
-                  <p className="text-muted text-md">that connect with your audience</p>
+                  <h3 className="font-semibold text-xl text-foreground">Deliberate Custom Projects</h3>
+                  <p className="text-muted text-md">Developed purposefully to fulfill vision and meet needs</p>
                 </div>
               </div>
             </div>
 
             {/* CTA button */}
+            <p className="text-muted text-base mt-10 mb-6">Like the sound of thoughful, human-focused development?</p>
             <button
               onClick={scrollToContact}
-              className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all mt-8"
+              className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all"
             >
-              Let&apos;s work together
+              Let&apos;s work together!
             </button>
           </div>
         </motion.div>

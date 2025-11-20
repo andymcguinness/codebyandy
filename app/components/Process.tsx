@@ -7,23 +7,23 @@ const Process = () => {
   const steps = [
     {
       number: "01",
-      title: "We Chat",
-      description: "We talk about your goals, your audience, and what success looks like for you."
+      title: "Intro",
+      description: "We talk about your goals, your audience, and what success looks like for you. We have an in-depth discussion about your vision for this project, and ensure that I'm the right fit to make it happen!"
     },
     {
       number: "02",
-      title: "We Plan",
-      description: "We'll map out a clear plan that works for your timeline and budget."
+      title: "Planning",
+      description: "We map out a clear plan that works for your timeline and budget. Deliverables and a payment structure will be clearly defined, so there will be no surprises. Any lingering questions will be answered, so you feel confident in the process!"
     },
     {
       number: "03",
-      title: "I Build",
-      description: "You'll see things take shape and have plenty of chances to give feedback."
+      title: "Building",
+      description: "I start tinkering away, with consistent check-ins so you're always in the know. There will be plenty of chances to provide feedback and guide the overall progress of the project!"
     },
     {
       number: "04",
-      title: "You Grow",
-      description: "We'll launch your site, and watch as your online presence grows!"
+      title: "Launch",
+      description: "Once final checks are done and the project is ready, we launch! And, of course, it's onwards to your next big project!"
     }
   ];
 
@@ -63,10 +63,10 @@ const Process = () => {
             <div className="lg:top-24 space-y-8">
               <div className="w-16 h-px bg-accent-warm" />
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
-                <p className="inline-block text-foreground">How we&apos;ll <span className="inline-block text-accent">work together</span></p>
+                <p className="inline-block text-foreground">How we&apos;ll <span className="inline-block text-accent">collaborate</span></p>
               </h2>
               <p className="text-lg md:text-xl text-muted">
-                Building something great shouldn&apos;t feel complicated or stressful. I&apos;ll make sure the process is smooth and easy.
+                Building something great together shouldn&apos;t feel complicated or stressful. I&apos;ll make sure the process is friendly and smooth!
               </p>
             </div>
           </motion.div>

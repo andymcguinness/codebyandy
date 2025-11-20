@@ -51,10 +51,10 @@ const Services = () => {
             <div>
               <div className="w-16 h-px bg-accent mb-8" />
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-4">
-                <p className="inline-block text-foreground">Simple,{" "}<span className="inline-block text-accent-warm">transparent pricing</span></p>
+                <p className="inline-block text-foreground">Simple,{" "}<span className="inline-block text-accent-warm">upfront pricing</span></p>
               </h2>
               <p className="text-lg md:text-xl text-muted">
-                Choose the package that fits your needs.
+                Start with one of these packages, or build your own!
               </p>
             </div>
 
@@ -181,7 +181,7 @@ const Services = () => {
             >
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-foreground mb-2">Add-ons</h3>
-                <p className="text-muted">Enhance any package with these services</p>
+                <p className="text-muted">Need some non-development services? No problem!</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -191,6 +191,7 @@ const Services = () => {
                     <span className="text-2xl font-bold text-foreground">+$1,500</span>
                   </div>
                   <p className="text-muted">Custom visual design, brand-aligned aesthetics, and UI/UX refinement</p>
+                  <p className="text-foreground text-md mt-4">In partnership with <a href="https://www.spookiservices.com/" target="_blank" className="font-bold hover:text-accent-warm transition-colors">@spookiservices</a></p>
                 </div>
 
                 <div className="border border-foreground/10 rounded-xl p-6">
@@ -199,6 +200,7 @@ const Services = () => {
                     <span className="text-2xl font-bold text-foreground">+$1,500</span>
                   </div>
                   <p className="text-muted">Professional content writing, messaging strategy, and brand voice development</p>
+                  <p className="text-foreground text-md mt-4">In partnership with <a href="https://www.spookiservices.com/" target="_blank" className="font-bold hover:text-accent-warm transition-colors">@spookiservices</a></p>
                 </div>
               </div>
             </motion.div>
@@ -211,16 +213,16 @@ const Services = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
             >
               <div className="mb-8">
-                <h3 className="text-2xl font-bold text-foreground mb-2">Something Custom</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Custom Development</h3>
                 <p className="text-muted mb-6">
-                  Want something completely custom? I can do that! Get in touch and let&apos;s make your vision a reality.
+                  Need something that doesn&apos;t fit neatly in these boxes? No worries! Reach out and let&apos;s discuss what you&apos;re thinking. Quotes are always upfront and clear so you can make a confident decision.
                 </p>
 
                 <button
                   onClick={scrollToContact}
                   className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all"
                 >
-                  Let&apos;s chat
+                  Let&apos;s chat!
                 </button>
               </div>
             </motion.div>
