@@ -56,8 +56,12 @@ export default function Navigation() {
               onClick={() => scrollToSection('hero')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="text-2xl font-bold hover:text-accent transition-colors tracking-tight"
+              className="flex items-start gap-3 text-2xl font-bold hover:text-accent-warm transition-colors tracking-tight leading-tight"
             >
+              <svg width="32" height="32" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
+                <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
+              </svg>
               Code by Andy
             </motion.button>
 

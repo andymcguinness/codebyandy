@@ -8,7 +8,7 @@ const Process = () => {
     {
       number: "01",
       title: "Intro",
-      description: "We talk about your goals, your audience, and what success looks like for you. We have an in-depth discussion about your vision for this project, and ensure that I'm the right fit to make it happen!"
+      description: "We talk about your goals, your audience, and what success looks like for you. We have an in-depth discussion about your vision for this project, and ensure that we're a great fit!"
     },
     {
       number: "02",
@@ -62,7 +62,7 @@ const Process = () => {
           >
             <div className="lg:top-24 space-y-8">
               <div className="w-16 h-px bg-accent-warm" />
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-shadow-md">
                 <p className="inline-block text-foreground">How we&apos;ll <span className="inline-block text-accent">collaborate</span></p>
               </h2>
               <p className="text-lg md:text-xl text-muted">
@@ -86,7 +86,7 @@ const Process = () => {
                   <div className="flex gap-6 items-start">
                     {/* Number */}
                     <div className="shrink-0">
-                      <span className="text-5xl font-bold text-accent-warm lg:text-accent-warm/30 lg:group-hover:text-accent-warm">{step.number}</span>
+                      <span className="text-5xl font-bold text-accent-warm lg:text-accent-warm/30 lg:group-hover:text-accent-warm lg:group-hover:text-shadow-md">{step.number}</span>
                     </div>
 
                     {/* Content */}

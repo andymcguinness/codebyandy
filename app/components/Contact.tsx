@@ -87,7 +87,7 @@ export default function Contact() {
             {/* Geometric accent line */}
             <div className="w-16 h-px bg-accent mb-8" />
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-tight text-shadow-md">
               <p className="inline-block text-foreground">Let&apos;s start{" "}<span className="inline-block text-accent-warm">a conversation</span></p>
             </h2>
 
@@ -167,7 +167,7 @@ export default function Contact() {
               {/* Submit button */}
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed text-shadow-md shadow-md"
                 disabled={state.submitting}
               >
                 {state.submitting ? 'Sending...' : 'Send message'}

@@ -46,7 +46,7 @@ const About = () => {
             <div className="w-16 h-px bg-accent-warm" />
 
             {/* Main heading */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-shadow-md">
               <p className="inline-block text-foreground">Your partner{" "}<span className="inline-block text-accent mt-2">in the process</span></p>
             </h2>
 
@@ -59,7 +59,7 @@ const About = () => {
                 I work with folks from all walks of life, most of whom have one thing in common: they need a web presence, but don&apos;t have the time, energy, or resources to do it themselves. They&apos;re resourceful, determined, resilient, and also very, <span className="italic">very</span> busy. That&apos;s where I come in!
               </p>
               <p>
-                It&apos;s my job to listen to my clients and understand their passion, vision, and goals. Being entrusted with their online presence is not something I take lightly! I build every project with intention and care, and make the process as collaborative as humanly possible.
+                It&apos;s my job to listen to my clients and understand their passion, vision, and goals. Being entrusted with their online presence is not something I take lightly! I build every project with intention and care, and make the process as collaborative as possible.
               </p>
               <p>
                 In the end, I&apos;m not just another hire &mdash; I&apos;m a partner in the process, deeply invested in <span className="font-bold">your</span> success!
@@ -68,7 +68,7 @@ const About = () => {
               {/* Key message callout */}
               <div className="py-4">
                 <div className="border-l-2 border-accent-warm pl-6">
-                  <p className="text-accent-warm font-semibold text-xl">
+                  <p className="text-accent-warm font-semibold text-xl text-shadow-md">
                     If this connects with you, let&apos;s chat!
                   </p>
                 </div>

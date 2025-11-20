@@ -50,7 +50,7 @@ const Services = () => {
             {/* Header */}
             <div>
               <div className="w-16 h-px bg-accent mb-8" />
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-4">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-4 text-shadow-md">
                 <p className="inline-block text-foreground">Simple,{" "}<span className="inline-block text-accent-warm">upfront pricing</span></p>
               </h2>
               <p className="text-lg md:text-xl text-muted">
@@ -220,7 +220,7 @@ const Services = () => {
 
                 <button
                   onClick={scrollToContact}
-                  className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all"
+                  className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all text-shadow-md shadow-md"
                 >
                   Let&apos;s chat!
                 </button>

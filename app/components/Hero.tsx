@@ -44,13 +44,13 @@ export default function Hero() {
 
             {/* Main heading */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
-              <span className="block text-foreground">Code by Andy</span>
+              <span className="block text-foreground text-shadow-md">Code by Andy</span>
               <span className="block text-3xl text-accent-warm mt-2">Human-Centered Web Development</span>
             </h1>
 
             {/* Description */}
             <p className="text-lg md:text-xl text-muted leading-relaxed">
-              I partner with value-driven small business owners to grow their online presence through:
+              I partner with value-driven small business owners. Together, we grow their online presence through:
             </p>
 
             {/* Icon list */}
@@ -65,7 +65,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-foreground">Thoughtful Websites</h3>
-                  <p className="text-muted text-md">Crafted meticulously to both inspire audiences and exceed goals</p>
+                  <p className="text-muted text-md">Crafted meticulously to inspire audiences and exceed goals</p>
                 </div>
               </div>
 
@@ -79,7 +79,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-xl text-foreground">Intentional E-Commerce Sites</h3>
-                  <p className="text-muted text-md">Built with care for both human connection and sales conversions</p>
+                  <p className="text-muted text-md">Built with care for human connection and sales conversions</p>
                 </div>
               </div>
 
@@ -102,7 +102,7 @@ export default function Hero() {
             <p className="text-muted text-base mt-10 mb-6">Like the sound of thoughful, human-focused development?</p>
             <button
               onClick={scrollToContact}
-              className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all"
+              className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all text-shadow-md shadow-md"
             >
               Let&apos;s work together!
             </button>
