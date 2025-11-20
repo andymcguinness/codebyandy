@@ -109,7 +109,7 @@ export default function Hero() {
               onClick={scrollToContact}
               className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all mt-8"
             >
-              Let's work together
+              Let&apos;s work together
             </button>
           </div>
         </motion.div>

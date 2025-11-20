@@ -63,7 +63,7 @@ const Process = () => {
             <div className="lg:top-24 space-y-8">
               <div className="w-16 h-px bg-accent-warm" />
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
-                <p className="inline-block text-foreground">How we'll <span className="inline-block text-accent">work together</span></p>
+                <p className="inline-block text-foreground">How we&apos;ll <span className="inline-block text-accent">work together</span></p>
               </h2>
               <p className="text-lg md:text-xl text-muted">
                 Building something great shouldn&apos;t feel complicated or stressful. I&apos;ll make sure the process is smooth and easy.

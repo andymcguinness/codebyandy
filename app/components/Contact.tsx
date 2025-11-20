@@ -92,7 +92,7 @@ export default function Contact() {
             </h2>
 
             <p className="text-lg md:text-xl text-muted leading-relaxed">
-              Got a project in mind? Want to chat about an idea? Just curious about working together? Send me a message! I'd love to hear from you.
+              Got a project in mind? Want to chat about an idea? Just curious about working together? Send me a message! I&apos;d love to hear from you.
             </p>
           </motion.div>
 

@@ -6,13 +6,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navigation() {
   const { theme, toggleTheme } = useTheme();
-  const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-
       // Determine active section
       const sections = ['hero', 'about', 'services', 'process', 'contact'];
       const current = sections.find(section => {
