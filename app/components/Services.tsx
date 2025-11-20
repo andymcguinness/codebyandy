@@ -24,7 +24,8 @@ const Services = () => {
           <div className="relative w-full h-full min-h-[50vh] lg:min-h-screen">
             <Image
               src="/images/price_palm_computer.jpg"
-              alt="Pricing"
+              alt="A picture of a retro Macintosh computer against a wooden wall with palm fronds in the background. The picture has a haze that implies it was taken with a film camera."
+              title="Code by Andy | Pricing"
               fill
               sizes="(max-width: 1024px) 100vw, 33vw"
               className="object-cover"

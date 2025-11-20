@@ -57,7 +57,8 @@ export default function Contact() {
         <div className="relative w-full h-[50vh]">
           <Image
             src="/images/contact_section.jpg"
-            alt="Contact Section Image"
+            alt="A picture containing many plants on shelves surrounding a laptop on a desk. There are various objects in the picture, like a wine glass hung from a shelf, to add a homey feel to it."
+            title="Code by Andy | Contact"
             fill
             sizes="100vw"
             className="object-cover"
@@ -69,7 +70,8 @@ export default function Contact() {
       {/* Desktop background image */}
       <Image
         src="/images/contact_section.jpg"
-        alt="Hero image"
+        alt="A picture containing many plants on shelves surrounding a laptop on a desk. There are various objects in the picture, like a wine glass hung from a shelf, to add a homey feel to it."
+        title="Code by Andy | Contact"
         fill
         className="object-cover absolute inset-0 z-0 hidden lg:block"
         priority

@@ -11,7 +11,26 @@ const readexPro = Readex_Pro({
 
 export const metadata: Metadata = {
   title: "Code by Andy | Web Development Partner for Small Businesses",
-  description: "Professional web development partner for small businesses and entrepreneurs. Custom websites and web apps built with care, thoughtfully designed to grow with your business. No jargon, just quality work.",
+  description: "Web development partner for small businesses and entrepreneurs. Custom websites and web apps built with care, thoughtfully designed to grow your business.",
+  keywords: ["Web development", "Custom website", "Shopify developer"],
+  authors: [{name: "Andy McGuinness", url: "https://andymcguinness.com"}],
+  creator: "Andy McGuinness",
+  publisher: "Andy McGuinness",
+  metadataBase: new URL("https://codebyandy.com"),
+  alternates: {
+    canonical: "/"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false
+  },
+  icons: {
+    icon: "/favicon.ico"
+  },
+  other: {
+    "x-robots": "index"
+  }
 };
 
 export default function RootLayout({

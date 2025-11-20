@@ -17,7 +17,8 @@ const About = () => {
         <div className="relative w-full h-[50vh]">
           <Image
             src="/images/andypic.jpg"
-            alt="Andy McGuinness"
+            alt="A picture of Andy, a white man, smiling at the camera. He has short, curly hair, dark-rimmed glasses, and gauges in his ears."
+            title="Code by Andy | Andy McGuinness"
             fill
             sizes="100vw"
             className="object-cover"
@@ -88,7 +89,8 @@ const About = () => {
           <div className="relative w-full h-full min-h-[50vh] lg:min-h-screen">
             <Image
               src="/images/andypic.jpg"
-              alt="Andy McGuinness"
+              alt="A picture of Andy, a white man, smiling at the camera. He has short, curly hair, dark-rimmed glasses, and gauges in his ears."
+              title="Code by Andy | Andy McGuinness"
               fill
               sizes="(max-width: 1024px) 100vw, 33vw"
               className="object-cover"

@@ -23,7 +23,8 @@ export default function Hero() {
           <div className="w-full h-full min-h-[50vh] lg:min-h-screen">
             <Image
               src="/images/palm_hero.jpg"
-              alt="Hero image"
+              alt="A picture of green palm leaves"
+              title="Code by Andy | Hero Image"
               fill
               className="object-cover"
               priority
@@ -50,7 +51,7 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-lg md:text-xl text-muted leading-relaxed">
-              I partner with value-driven small business owners. Together, we grow their online presence through:
+              I partner with values-driven small business owners. Together, we grow their online presence through:
             </p>
 
             {/* Icon list */}

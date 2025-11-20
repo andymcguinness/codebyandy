@@ -43,7 +43,8 @@ const Process = () => {
             <div className="relative w-full h-[50vh]">
               <Image
                 src="/images/process_section.jpg"
-                alt="Process Section Image"
+                alt="Two hands extend into the camera view. One holds a succulent, and another holds a pothos."
+                title="Code by Andy | Collaboration"
                 fill
                 sizes="100vw"
                 className="object-cover"
@@ -116,7 +117,8 @@ const Process = () => {
             <div className="relative w-full h-full min-h-[50vh] lg:min-h-screen">
               <Image
                 src="/images/process_section.jpg"
-                alt="Process Section Image"
+                alt="Two hands extend into the camera view. One holds a succulent, and another holds a pothos."
+                title="Code by Andy | Collaboration"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-cover"
