@@ -3,6 +3,7 @@ import { readFile } from 'fs/promises';
 import { remark } from 'remark';
 import remarkFrontmatter from 'remark-frontmatter';
 import { parse as parseYaml } from 'yaml';
+import path from 'path';
 
 interface BlogPost {
   slug: string;
@@ -15,7 +16,8 @@ interface BlogPost {
 }
 
 export async function getBlogPosts(tag?: string): Promise<BlogPost[]> {
-  const files = await globby('content/**/*.mdx');
+  const contentDir = path.join(process.cwd(), 'content');
+  const files = await globby('**/*.mdx', { cwd: contentDir, absolute: true });
 
   const posts = await Promise.all(
     files.map(async (filePath) => {
@@ -34,9 +36,7 @@ export async function getBlogPosts(tag?: string): Promise<BlogPost[]> {
         }
       }
 
-      const slug = filePath
-        .replace('content/', '')
-        .replace(/\.mdx$/, '');
+      const slug = path.basename(filePath, '.mdx');
 
       return {
         slug,
