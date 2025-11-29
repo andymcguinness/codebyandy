@@ -50,7 +50,7 @@ export async function generateMetadata({
         description,
       },
     };
-  } catch (error) {
+  } catch (_error) {
     return {
       title: 'Blog Post | Code by Andy',
       description: 'Read this blog post on Code by Andy',
