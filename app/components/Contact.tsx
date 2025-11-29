@@ -87,10 +87,10 @@ export default function Contact() {
             className="mb-12"
           >
             {/* Geometric accent line */}
-            <div className="w-16 h-px bg-accent mb-8" />
+            <div className="w-16 h-px bg-accent-warm mb-8" />
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-tight text-shadow-md">
-              <p className="inline-block text-foreground">Let&apos;s start{" "}<span className="inline-block text-accent-warm">a conversation</span></p>
+              <p className="inline-block text-foreground">Let&apos;s start{" "}<span className="inline-block text-accent">a conversation</span></p>
             </h2>
 
             <p className="text-lg md:text-xl text-muted leading-relaxed">
