@@ -32,6 +32,7 @@ export async function generateMetadata({
     const title = frontmatter.title || slug;
     const description = frontmatter.description || `Read ${title} on Code by Andy`;
     const tags = frontmatter.tags || [];
+    const image = frontmatter.image || '/images/blog_background.jpg';
 
     return {
       title: `${title} | Code by Andy`,
@@ -43,11 +44,18 @@ export async function generateMetadata({
         type: 'article',
         publishedTime: frontmatter.date ? new Date(frontmatter.date).toISOString() : undefined,
         tags: tags.length > 0 ? tags : undefined,
+        images: [
+          {
+            url: image,
+            alt: title,
+          },
+        ],
       },
       twitter: {
-        card: 'summary',
+        card: 'summary_large_image',
         title,
         description,
+        images: [image],
       },
     };
   } catch {
