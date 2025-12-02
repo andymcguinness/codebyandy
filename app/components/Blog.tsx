@@ -84,7 +84,7 @@ export default function Blog() {
             {/* CTA button */}
             <Link
               href="/blog"
-              className="inline-block px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all text-shadow-md shadow-md rounded-xl"
+              className="inline-block px-8 py-4 bg-accent hover:bg-accent-dark text-foreground font-semibold transition-all shadow-md rounded-xl"
             >
               Read the blog
             </Link>

@@ -62,7 +62,6 @@ export default function Contact() {
             fill
             sizes="100vw"
             className="object-cover"
-            priority
           />
         </div>
       </motion.div>
@@ -73,8 +72,8 @@ export default function Contact() {
         alt="A picture containing many plants on shelves surrounding a laptop on a desk. There are various objects in the picture, like a wine glass hung from a shelf, to add a homey feel to it."
         title="Code by Andy | Contact"
         fill
+        sizes="100vw"
         className="object-cover absolute inset-0 z-0 hidden lg:block"
-        priority
       />
 
       <div className="container mx-auto px-4 lg:px-16 z-1 mt-[50vh] lg:mt-0">
@@ -169,7 +168,7 @@ export default function Contact() {
               {/* Submit button */}
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed text-shadow-md shadow-md"
+                className="w-full px-8 py-4 bg-accent hover:bg-accent-dark text-foreground font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-md"
                 disabled={state.submitting}
               >
                 {state.submitting ? 'Sending...' : 'Send message'}

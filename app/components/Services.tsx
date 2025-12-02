@@ -221,7 +221,7 @@ const Services = () => {
 
                 <button
                   onClick={scrollToContact}
-                  className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all text-shadow-md shadow-md"
+                  className="px-8 py-4 bg-accent hover:bg-accent-dark text-foreground font-semibold transition-all shadow-md"
                 >
                   Let&apos;s chat!
                 </button>

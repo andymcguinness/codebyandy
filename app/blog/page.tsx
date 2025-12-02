@@ -16,7 +16,7 @@ export default async function BlogPage({
   return (
     <div className="relative min-h-screen flex flex-col">
       <Navigation page="blog" />
-      <section className="relative flex-1">
+      <main className="relative flex-1">
         {/* Two-column grid */}
         <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-0">
           {/* Left column - Image (sticky) */}
@@ -27,8 +27,10 @@ export default async function BlogPage({
                 alt="A series of cacti reaching upwards."
                 title="Code by Andy | Blog"
                 fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-cover border border-foreground/30"
                 priority
+                fetchPriority="high"
               />
             </div>
           </div>
@@ -104,6 +106,7 @@ export default async function BlogPage({
                             src={post.image}
                             alt={post.title}
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
                             className="object-cover"
                           />
                         </div>
@@ -170,7 +173,7 @@ export default async function BlogPage({
             </div>
           </div>
         </div>
-      </section>
+      </main>
       <Footer />
     </div>
   );

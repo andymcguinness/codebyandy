@@ -6,7 +6,25 @@ import createMDX from '@next/mdx'
 const nextConfig = {
   // Configure `pageExtensions` to include markdown and MDX files
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  // Optionally, add any other Next.js config below
+
+  // Optimize CSS handling
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+
+  // Enable experimental optimizations
+  experimental: {
+    optimizeCss: true,
+  },
+
+  // Compress responses
+  compress: true,
+
+  // Optimize images
+  images: {
+    formats: ['image/avif' as const, 'image/webp' as const],
+    minimumCacheTTL: 31536000, // 1 year cache for optimized images
+  },
 }
 
 const withMDX = createMDX({

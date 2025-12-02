@@ -7,6 +7,8 @@ import { ThemeProvider } from "./context/ThemeContext";
 const readexPro = Readex_Pro({
   variable: "--font-readex-pro",
   subsets: ["latin"],
+  display: "swap", // Use font-display: swap for faster rendering
+  preload: true, // Preload the font
 });
 
 export const metadata: Metadata = {
@@ -41,6 +43,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Preconnect to external domains for faster resource loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://vercel.live" />
+
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -63,7 +70,7 @@ export default function RootLayout({
         <ThemeProvider>
           {children}
         </ThemeProvider>
-        <Analytics />
+        <Analytics mode="production" />
       </body>
     </html>
   );

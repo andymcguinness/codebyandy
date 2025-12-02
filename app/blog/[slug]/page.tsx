@@ -89,7 +89,7 @@ export default async function Page({
   return (
     <div className="relative min-h-screen flex flex-col">
       <Navigation page="blog" />
-      <div className="relative flex-1 pt-24 pb-16 px-4">
+      <main className="relative flex-1 pt-24 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
           {/* Back link */}
           <Link
@@ -122,7 +122,10 @@ export default async function Page({
                     src={frontmatter.image}
                     alt={frontmatter.title || slug}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
                     className="object-cover"
+                    priority
+                    fetchPriority="high"
                   />
                 </div>
               )}
@@ -176,7 +179,7 @@ export default async function Page({
             </div>
           </article>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );

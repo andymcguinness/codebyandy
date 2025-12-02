@@ -26,8 +26,10 @@ export default function Hero() {
               alt="A picture of green palm leaves"
               title="Code by Andy | Hero Image"
               fill
+              sizes="(max-width: 1024px) 100vw, 33vw"
               className="object-cover"
               priority
+              fetchPriority="high"
             />
           </div>
         </motion.div>
@@ -65,7 +67,7 @@ export default function Hero() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground">Thoughtful Websites</h3>
+                  <h2 className="text-xl font-semibold text-foreground">Thoughtful Websites</h2>
                   <p className="text-muted text-md">Crafted meticulously to inspire audiences and exceed goals</p>
                 </div>
               </div>
@@ -79,7 +81,7 @@ export default function Hero() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-xl text-foreground">Intentional E-Commerce Sites</h3>
+                  <h2 className="font-semibold text-xl text-foreground">Intentional E-Commerce Sites</h2>
                   <p className="text-muted text-md">Built with care for human connection and sales conversions</p>
                 </div>
               </div>
@@ -93,7 +95,7 @@ export default function Hero() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-xl text-foreground">Deliberate Custom Projects</h3>
+                  <h2 className="font-semibold text-xl text-foreground">Deliberate Custom Projects</h2>
                   <p className="text-muted text-md">Developed purposefully to fulfill vision and meet needs</p>
                 </div>
               </div>
@@ -103,7 +105,7 @@ export default function Hero() {
             <p className="text-muted text-base mt-10 mb-6">Like the sound of thoughful, human-focused development?</p>
             <button
               onClick={scrollToContact}
-              className="px-8 py-4 bg-accent hover:bg-accent-dark text-background font-semibold transition-all text-shadow-md shadow-md"
+              className="px-8 py-4 bg-accent hover:bg-accent-dark text-foreground font-semibold transition-all shadow-md"
             >
               Let&apos;s work together!
             </button>
