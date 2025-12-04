@@ -97,6 +97,18 @@ export default function Contact() {
             </p>
           </motion.div>
 
+          {/* Free Consultation Callout */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="border border-accent/30 bg-accent/5 rounded-xl p-6 mb-8"
+          >
+            <p className="text-lg md:text-xl text-foreground">
+              I offer a{" "}<span className="font-semibold text-accent-warm">free 30&ndash;minute discussion</span> of your goals and vision with no commitment required.  Submit this form to get scheduled!
+            </p>
+          </motion.div>
+
           {/* Form */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

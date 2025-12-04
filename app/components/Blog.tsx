@@ -56,10 +56,10 @@ export default function Blog() {
             {/* Description */}
             <div className="space-y-6 text-lg md:text-xl text-muted leading-relaxed">
               <p>
-                I write about web development, values-based work, and building with intention. From technical deep-dives to reflections on human-centered design, my blog is where I share what I&apos;m learning and thinking about.
+                I write about web development, values-based work, and building with intention. From web accessibility guidance to reflections on human-centered design, my blog is where I share what I&apos;m working on and thinking about.
               </p>
               <p>
-                Whether you&apos;re a fellow developer, a small business owner, or just curious about thoughtful web development, there&apos;s something here for you.
+                Whether you&apos;re a small business owner or just curious about thoughtful web development, there&apos;s something here for you.
               </p>
             </div>
 

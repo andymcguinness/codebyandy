@@ -61,117 +61,117 @@ const Services = () => {
 
             {/* Pricing Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Custom Website */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="border border-foreground/10 rounded-xl p-8 flex flex-col"
-          >
-            <h3 className="text-2xl font-bold text-foreground mb-2">The Yucca</h3>
-            <div className="mb-6">
-              <span className="text-muted text-sm">Starting at</span>
-              <div className="text-4xl font-bold text-foreground">$2,500</div>
-            </div>
+              {/* Custom Website */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                className="border border-foreground/10 rounded-xl p-8 flex flex-col"
+              >
+                <h3 className="text-2xl font-bold text-foreground mb-2">The Yucca</h3>
+                <div className="mb-6">
+                  <span className="text-muted text-sm">Starting at</span>
+                  <div className="text-4xl font-bold text-foreground">$2,500</div>
+                </div>
 
-            <div className="grow space-y-3 mb-8">
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
+                <div className="grow space-y-3 mb-8">
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
 
-                <span className="text-muted">Basic marketing site</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
-                <span className="text-muted">Up to 5 pages</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
-                <span className="text-muted">SEO optimization</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
-                <span className="text-muted">Mobile responsive</span>
-              </div>
-            </div>
+                    <span className="text-muted">Basic marketing site</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Up to 5 pages</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">SEO optimization</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Mobile responsive</span>
+                  </div>
+                </div>
 
-            <div className="pt-4 border-t border-foreground/10">
-              <p className="text-sm text-muted">Add a blog: <span className="text-foreground font-semibold">+$500</span></p>
-            </div>
-          </motion.div>
+                <div className="pt-4 border-t border-foreground/10">
+                  <p className="text-sm text-muted">Add a blog: <span className="text-foreground font-semibold">+$500</span></p>
+                </div>
+              </motion.div>
 
-          {/* E-commerce Site - Featured */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="border border-foreground/10 rounded-xl p-8 flex flex-col relative overflow-hidden"
-          >
-            <h3 className="text-2xl font-bold text-foreground mb-2">The Palm</h3>
-            <div className="mb-6">
-              <span className="text-muted text-sm">Starting at</span>
-              <div className="text-4xl font-bold text-foreground">$5,000</div>
-            </div>
+              {/* E-commerce Site - Featured */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="border border-foreground/10 rounded-xl p-8 flex flex-col relative overflow-hidden"
+              >
+                <h3 className="text-2xl font-bold text-foreground mb-2">The Palm</h3>
+                <div className="mb-6">
+                  <span className="text-muted text-sm">Starting at</span>
+                  <div className="text-4xl font-bold text-foreground">$5,000</div>
+                </div>
 
-            <div className="grow space-y-3 mb-8">
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
-                <span className="text-muted">Basic e-commerce site</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
-                <span className="text-muted">Up to 5 pages</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
-                <span className="text-muted">Up to 10 products</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
-                <span className="text-muted">SEO optimization</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
-                <span className="text-muted">Blog included</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
-                  <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z"/>
-                  <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z"/>
-                </svg>
-                <span className="text-muted">Mobile responsive</span>
-              </div>
+                <div className="grow space-y-3 mb-8">
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Basic e-commerce site</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Up to 5 pages</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Up to 10 products</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">SEO optimization</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Blog included</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Mobile responsive</span>
+                  </div>
+                </div>
+              </motion.div>
             </div>
-          </motion.div>
-        </div>
 
             {/* Add-ons */}
             <motion.div
@@ -206,12 +206,66 @@ const Services = () => {
               </div>
             </motion.div>
 
-            {/* Something Custom Section */}
+            {/* Maintenance Package */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.5 }}
+            >
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Ongoing Maintenance</h3>
+                <p className="text-muted">Keep your site running smoothly with regular updates and support.</p>
+              </div>
+
+              <div className="border border-foreground/10 rounded-xl p-8">
+                <div className="mb-6">
+                  <div className="text-4xl font-bold text-foreground">$400<span className="text-xl text-muted">/month</span></div>
+                </div>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Up to 10 hours of work per month</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Content updates and changes</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Safety and security updates</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg width="15" height="15" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" className="fill-accent">
+                      <path d="m37.5 37.5v1125c310.5 0 562.12-252 562.12-562.5s-251.62-562.5-562.12-562.5z" />
+                      <path d="m1162.5 600c0-310.5-251.62-562.5-562.12-562.5v1125c310.5 0 562.12-252 562.12-562.5z" />
+                    </svg>
+                    <span className="text-muted">Bug fixes and troubleshooting</span>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-foreground/10">
+                  <p className="text-sm text-muted">Additional work beyond 10 hours: <span className="text-foreground font-semibold">$40/hour</span></p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Something Custom Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.6 }}
             >
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-foreground mb-2">Custom Development</h3>
